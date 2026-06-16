@@ -4,8 +4,14 @@ import json
 from datetime import datetime
 
 # get notion api key and database id
-notion_api_key="REMOVED_SECRET"
-db_id="3803ba79ca9d80a79e37cd4c0e14a63f"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+notion_api_key = os.getenv("notion_api_key")
+
+db_id = os.getenv("db_id")
 
 #define content for notion page
 page_name='test page 02'
