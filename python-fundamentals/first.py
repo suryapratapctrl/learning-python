@@ -1,6 +1,7 @@
+import requests
 
 print("hello world kanu")
-import requests
+
 
 def get_weather(latitude, longitude):
     response = requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,wind_speed_10m")
